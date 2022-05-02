@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/SagarDeep1811/my-portfolio.git/static/css/main.e0680b88.css",
+    "main.js": "/SagarDeep1811/my-portfolio.git/static/js/main.ab3e0533.js",
+    "static/media/purple.jpg": "/SagarDeep1811/my-portfolio.git/static/media/purple.a5a33e2302502a599c07.jpg",
+    "static/media/hazelwood.jpg": "/SagarDeep1811/my-portfolio.git/static/media/hazelwood.eb8d3326a2ba808d58d5.jpg",
+    "static/media/my_portfolio_pic_2.jpeg": "/SagarDeep1811/my-portfolio.git/static/media/my_portfolio_pic_2.2082fd647dc2c2c57e22.jpeg",
+    "index.html": "/SagarDeep1811/my-portfolio.git/index.html",
+    "main.e0680b88.css.map": "/SagarDeep1811/my-portfolio.git/static/css/main.e0680b88.css.map",
+    "main.ab3e0533.js.map": "/SagarDeep1811/my-portfolio.git/static/js/main.ab3e0533.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0680b88.css",
+    "static/js/main.ab3e0533.js"
+  ]
+}
