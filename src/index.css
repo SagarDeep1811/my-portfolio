@@ -1,13 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/* ------------------------------------------------------ */
+.header,
+.about,
+.projects,
+.experience,
+.social,
+.footer {
+  padding: 50px 25px 25px;
+}
+
+/* ------------------------------------------------------ */
+/* -- Header -- */
+
+.header {
+  position: fixed;
+  margin-bottom: -100px;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  gap: 200px;
+}
+
+.header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  max-width: 250px;
+  height: 250px;
+  border-radius: 5%;
+}
+
+.header__img {
+  grid-column: 1 / 2;
+}
+
+.header__content {
+  padding-top: 50px;
+  grid-column: 2 / 3;
+  width: 400px;
+  margin: 0 auto;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.header_work {
+  background-image: url("C:\Users\Sagar\OneDrive\Desktop\FRONT-END projects\Daap(s)\portfolio_template\src\assets\purple.jpg");
+  width: 660px;
+  /* padding-left: 100px; */
+}
+
+.header_hiAndIntro {
+  margin-left: 100px;
+  width: 600px;
+  background-image: url("C:\Users\Sagar\OneDrive\Desktop\FRONT-END projects\Daap(s)\portfolio_template\src\assets\hazelwood.jpg");
+}
+
+.header__content h1 {
+  display: block;
+  margin-left: -40px;
+  font-size: 60px;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  width: 200px;
+  background-color: white;
+}
+.header__content h2 {
+  display: block;
+  margin-left: 110px;
+  font-size: 40px;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  width: 250px;
+  background-color: white;
+}
+
+.header_work_1 {
+  width: 300px;
+  margin-left: -40px;
+  background-color: white;
+}
+.header_work_2 {
+  margin-left: 210px;
+  width: 300px;
+  background-color: white;
+}
+.header_work_3 {
+  margin-left: -100px;
+  width: 360px;
+  margin-bottom: 30px;
+  background-color: white;
+}
+.header__content p {
+  font-size: 32px;
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+.border-gradient-green {
+  border-image-source: linear-gradient(to left, #008a39, #7cb33e);
+}
+
+/* ------------------------------------------------------ */
+.button {
+  display: inline-block;
+
+  background: rgb(41, 40, 40);
+
+  padding: 15px 50px;
+  color: rgb(236, 236, 76);
+  border: yellow 2px solid;
+  border-radius: 5px;
+
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+.button:hover {
+  border: white 2px solid;
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: white;
+  width: 50%;
+  height: 70px;
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  border-top: rgb(102, 32, 32) 4px solid;
+  border-bottom: rgb(102, 32, 32) 4px solid;
+  position: fixed;
+}
+
+#navbar_button {
+  appearance: none;
+  background-color: transparent;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 1;
+  padding: 1.5em 2.2em;
+  text-align: center;
+  text-transform: uppercase;
+  height: 60px;
+  width: 200px;
+}
+
+#navbar_button:hover {
+  /* border: solid black 2px; */
+  font-weight: bold;
 }

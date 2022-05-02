@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Header />
+      <a
+        className="button"
+        href="mailto:sagardeep1811@hotmail.com?subject=Reaching%20out%20you%20via%20your%20portfolio."
+        style={{ "margin-top": "500px", "margin-left": "128.5px" }}
+      >
+        Get In Touch
+      </a>
     </div>
   );
 }
