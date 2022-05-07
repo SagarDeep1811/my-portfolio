@@ -13,6 +13,10 @@ body {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("C:\Users\Sagar\OneDrive\Desktop\FRONT-END projects\stocks\src\assets\bckgrnd_1.jpg");
+  background-position: top;
+  background-size: 1400px;
+  background-repeat: no-repeat;
 }
 
 code {
@@ -24,6 +28,7 @@ code {
   max-width: 1200px;
   margin: 0 auto;
   background-color: white;
+  margin-top: 30px;
 }
 
 /* ------------------------------------------------------ */
@@ -42,81 +47,65 @@ code {
 .header {
   position: fixed;
   margin-bottom: -100px;
-  margin-top: 60px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  margin-top: 30px;
   text-align: center;
-  gap: 200px;
-}
-
-.header img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  max-width: 250px;
-  height: 250px;
-  border-radius: 5%;
-}
-
-.header__img {
-  grid-column: 1 / 2;
 }
 
 .header__content {
-  padding-top: 50px;
-  grid-column: 2 / 3;
+  margin-top: 30px;
   width: 400px;
-  margin: 0 auto;
-  grid-template-rows: repeat(3, 1fr);
+  margin-left: 340px;
 }
 
 .header_work {
-  background-image: url("C:\Users\Sagar\OneDrive\Desktop\FRONT-END projects\Daap(s)\portfolio_template\src\assets\purple.jpg");
-  width: 660px;
-  /* padding-left: 100px; */
+  width: 976px;
 }
 
 .header_hiAndIntro {
   margin-left: 100px;
-  width: 600px;
-  background-image: url("C:\Users\Sagar\OneDrive\Desktop\FRONT-END projects\Daap(s)\portfolio_template\src\assets\hazelwood.jpg");
+  width: 876px;
 }
 
 .header__content h1 {
   display: block;
   margin-left: -40px;
   font-size: 60px;
-  grid-column: 1/4;
-  grid-row: 1/2;
   width: 200px;
-  background-color: white;
+  font-family: Florence, cursive;
+  /* background-color: white; */
+  background-color: transparent;
 }
 .header__content h2 {
   display: block;
   margin-left: 110px;
   font-size: 40px;
-  grid-column: 1/4;
-  grid-row: 1/2;
   width: 250px;
-  background-color: white;
+  /* background-color: white; */
+  font-family: Florence, cursive;
+  background-color: transparent;
 }
 
 .header_work_1 {
   width: 300px;
   margin-left: -40px;
-  background-color: white;
+  /* background-color: white; */
+  background-color: transparent;
+  font-family: Florence, cursive;
 }
 .header_work_2 {
   margin-left: 210px;
   width: 300px;
-  background-color: white;
+  /* background-color: white; */
+  background-color: transparent;
+  font-family: Florence, cursive;
 }
 .header_work_3 {
   margin-left: -100px;
   width: 360px;
   margin-bottom: 30px;
-  background-color: white;
+  /* background-color: white; */
+  background-color: transparent;
+  font-family: Florence, cursive;
 }
 .header__content p {
   font-size: 32px;
@@ -129,49 +118,71 @@ code {
   border-image-slice: 1;
   border-width: 5px;
 }
-.border-gradient-purple {
-  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+.border-gradient-blue {
+  border-image-source: linear-gradient(to top, transparent, skyblue);
+  /* 
+    rgb(248, 227, 135), */
 }
-.border-gradient-green {
-  border-image-source: linear-gradient(to left, #008a39, #7cb33e);
+.border-gradient-yellow {
+  border-image-source: linear-gradient(to top, rgb(233, 206, 88), transparent);
+}
+.border-gradient-deepYellow {
+  border-image-source: linear-gradient(to top, rgb(233, 206, 88), transparent);
+}
+.border-gradient-pink {
+  border-image-source: linear-gradient(
+    to top,
+    #f173c3,
+    rgb(233, 206, 88),
+    transparent
+  );
+}
+.border-gradient-purple {
+  border-image-source: linear-gradient(to top, #972270 5%, transparent);
+  /*  #f173c3 100%*/
 }
 
 /* ------------------------------------------------------ */
 .button {
   display: inline-block;
-
-  background: rgb(41, 40, 40);
-
   padding: 15px 50px;
-  color: rgb(236, 236, 76);
-  border: yellow 2px solid;
+  color: black;
+  border: black;
+  background-color: white;
   border-radius: 5px;
 
+  border: white 2px solid;
   font-family: "Work Sans";
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
   transition: all 250ms ease;
+  margin-left: 60px;
+  width: 150px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .button:hover {
-  border: white 2px solid;
   color: #ffffff;
+  background: rgb(41, 40, 40);
 }
 
 .navbar {
-  background-color: white;
-  width: 50%;
+  width: 100%;
   height: 70px;
-  margin-top: 10px;
+  margin-top: -25px;
+  margin-left: -83px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: flex-start;
-  gap: 20px;
-  border-top: rgb(102, 32, 32) 4px solid;
-  border-bottom: rgb(102, 32, 32) 4px solid;
+  justify-content: space-evenly;
+  gap: 0;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: transparent;
+  text-align: center;
   position: fixed;
 }
 
@@ -179,26 +190,194 @@ code {
   appearance: none;
   background-color: transparent;
   border-width: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   color: #000000;
+  color: rgb(255, 255, 255);
   cursor: pointer;
-  display: inline-block;
-  font-family: Clarkson, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 1em;
-  margin: 0;
-  opacity: 1;
-  outline: 1;
-  padding: 1.5em 2.2em;
+  /* display: inline-block; */
+  font-family: monospace;
+  font-size: 24px;
+  /* font-weight: 500; */
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   height: 60px;
   width: 200px;
+  text-align: center;
+  /* border-bottom: skyblue solid 3px; */
 }
 
 #navbar_button:hover {
   /* border: solid black 2px; */
   font-weight: bold;
+  color: black;
+  background-color: transparent;
+}
+
+/* -- About -- */
+.about {
+  position: fixed;
+  width: 88%;
+}
+.about h2 {
+  margin-top: 90px;
+  font-size: 42px;
+  /* margin: 25px auto; */
+}
+
+.about p {
+  font-size: 18px;
+  margin-top: 50px;
+  line-height: 130%;
+  max-width: 75ch;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.my_pic img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  max-width: 250px;
+  height: 250px;
+  border-radius: 5%;
+}
+
+/* ------------------------------------------------------ */
+/* -- Projects -- */
+.projects {
+  position: fixed;
+}
+
+.projects h2 {
+  font-size: 42px;
+  margin: 25px auto;
+}
+
+.projects p {
+  font-size: 18px;
+  line-height: 130%;
+  max-width: 50ch;
+}
+
+.projects__cards {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 25px;
+  margin-left: 30px;
+}
+
+.projects__card {
+  max-width: 350px;
+
+  padding: 20px;
+
+  border: 1px solid #0088bb;
+  border-radius: 8px;
+  height: 506px;
+  width: 350px;
+}
+
+.projects__card h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.projects__card p {
+  font-size: 16px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.projects__card img {
+  width: 100%;
+  height: 189px;
+  width: 308px;
+  margin: 20px 0 10px;
+
+  border-radius: 8px;
+}
+
+.button_projects {
+  display: inline-block;
+  padding: 15px 50px;
+  color: black;
+  border: black;
+  background-color: transparent;
+  border-radius: 5px;
+
+  border: white 2px solid;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 250ms ease;
+  margin-left: 35px;
+  width: 100px;
+  padding-left: 32px;
+  padding-right: 0;
+}
+
+.button_projects:hover {
+  color: #ffffff;
+  background: rgb(41, 40, 40);
+}
+
+/* ------------------------------------------------------ */
+/* -- Education/Experience -- */
+
+.experience {
+  position: fixed;
+}
+
+.experience ul {
+  margin: 0 0 10px 50px;
+}
+
+.experience li {
+  font-size: 18px;
+  line-height: 130%;
+  margin: 15px auto;
+}
+
+/* ------------------------------------------------------ */
+/* -- Social Media -- */
+
+.social {
+  position: fixed;
+}
+
+.social_button {
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: black;
+  border: black;
+  border: 2px white solid;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 250ms ease;
+  margin-left: 460px;
+  width: 200px;
+  margin-top: 40px;
+}
+
+.social_button:hover {
+  color: #ffffff;
+  background: rgb(41, 40, 40);
 }
